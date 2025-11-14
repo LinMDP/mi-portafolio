@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon/Iconv2.png"/>
+    <title>MI PORTAFOLIO</title>
+</head>
+<body>
+    <!--1.Encabezado-->
+   <header>
+
+    <h1> LINDSAY MELINA DUARTE PEÑA </h1>
+    <!--lema profesional-->
+    <p>Diseñar lo que imagino, crear lo que emociona</p>
+    <!--Avatar (diseñado por mi misma)-->
+    <img src="img/avatar.jpeg" alt="Avatar del autor"/>
+   
+  </header>
+    <!--2. Menu de navegacion -->
+  <nav>
+    <ul>
+        <li><a href="#sobremi"> Sobre Mi </a> </li>
+        <li><a href="#habilidades"> Tabla de Habilidades </a> </li>
+    </ul>
+  </nav>
+
+  <!--3. Seccion sobre mi-->
+    <section id="sobremi"> <!--Anclaje 1-->
+      
+      <h2> Sobre mi</h2>
+<p>
+ Mi nombre es Melina, tengo 19 años y actualmente estudio la carrera de <i>Sistemas de Información</i>. 
+ Aunque la programación no es mi fuerte, me apasiona el <b>diseño y la creación visual.</b> 
+ En mi tiempo libre disfruto leer, escuchar música y dibujar personajes originales con influencias del <mark>cómic asiático</mark>, explorando mundos imaginarios sin necesidad de historias escritas. 
+ He realizado algunas <em>comisiones</em> de ilustración en redes sociales, y aunque hoy no lo practico con frecuencia, crear cosas que conectan con las personas me genera una satisfacción increíble. 
+ Me considero una persona responsable, creativa y comprometida con las tareas que me propongo, capaz de adaptarme rápidamente a nuevos entornos. Mi <b>objetivo profesional</b> es aprender más sobre diseño gráfico y desarrollo web, y construir una carrera en la que pueda combinar estética, funcionalidad y emoción en cada proyecto.
+</p>
+    </section>
+    
+  <!--4. lista de intereses (lista desordenada)-->
+    <h2> Intereses </h2>
+    <ul>
+        <li>Lectura de novelas gráficas</li>
+        <li>Ilustración digital</li>
+        <li>Exploración de técnicas de repostería</li>
+        <li>Diseño visual y expresión artística</li>
+        <li>Descubrimiento de nuevas herramientas creativas</li>
+    </ul>
+
+    <br>
+    <!--5. tabla de habilidades-->
+<section id="habilidades"> <!--Anclaje 2-->
+
+ <table>
+    <!--Titulo de la tabla-->
+    <caption>Mis habilidades</caption>
+    
+    <thead>
+      <tr>
+        <th scope="col">Habilidades</th>
+        <th scope="col">Nivel</th>
+        <th scope="col">Observaciones</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <!--fila1-->
+      <tr>
+        <td>Ilustración digital</td>
+        <td>Intermedio</td>
+        <td>Creación de personajes; experiencia en comisiones por redes sociales</td>
+      </tr>
+      
+      <!--fila2-->
+      <tr>
+        <td>Diseño gráfico</td>
+        <td>Principiante</td>
+        <td>Gran interés en aprender y desenvolverse profesionalmente en este campo</td>
+      </tr>
+      <!--fila3-->
+      <tr>
+        <td>Desarrollo web</td>
+        <td>Principiante</td>
+        <td>Área de interés para futuro profesional; en proceso de aprendizaje</td>
+      </tr>
+      <!--fila4-->
+      <tr>
+        <td>Adaptabilidad</td>
+        <td>Fuerte</td>
+        <td>Buena capacidad para aprender en nuevos entornos</td>
+      </tr>
+      <!--fila5-->
+      <tr>
+        <td>Responsabilidad</td>
+        <td>Fuerte</td>
+        <td>Comprometida a actividades solicitadas</td>
+      </tr>
+    </tbody>
+     <!--Pie de la tabla-->
+    <tfoot>
+      <tr>
+        <th scope="row">Nota</th>
+        <td>El trabajo con pasión deja huellas duraderas</td>
+      </tr>
+    </tfoot>
+</table>
+
+</section>
+
+<!--6. Multimedia_Video de presentacion personal(Video de mala calidad ;-; speedpaint con mi voz de fondo)-->
+<h3>¿Deseas conocer un poco más sobre mi?</h3>
+<h4>Observa el siguiente video:</h4>
+
+<figure>
+  <video src="videos/speedpaint.mp4" poster="img/black.jpg" width="640" controls>Tu navegador no soporta la reproducción del video </video>
+</figure>
+
+<!--7.Formulario de contacto-->
+<form action="#" method="post">
+  <fieldset>
+    <legend>Formulario de contacto</legend>
+    
+    <!-- Nombre -->
+    <label for="nombre">Nombre º</label>
+    <input id="nombre" name="nombre" type="text" required minlength="2" maxlength="100">
+    
+    <!-- Correo -->
+    <label for="correo">Correo electrónico º</label>
+    <input id="correo" name="correo" type="email" required>
+    
+    <!-- Edad -->
+    <label for="edad">Edad º</label>
+    <input id="edad" name="edad" type="number" required min="13" max="120">
+    
+    <!-- Género -->
+    <fieldset>
+      <legend>Género º</legend>
+      <label><input type="radio" name="genero" value="femenino" required> Femenino</label>
+      <label><input type="radio" name="genero" value="masculino"> Masculino</label>
+      <label><input type="radio" name="genero" value="otro"> Otro</label>
+      <label><input type="radio" name="genero" value="nopreferir"> Prefiero no decirlo</label>
+    </fieldset>
+    
+    <!-- Intereses -->
+    <label for="intereses">Cuéntame sobre tus intereses º</label>
+    <textarea id="intereses" name="intereses" required minlength="10" maxlength="1000" rows="4"></textarea>
+    
+    <hr>
+    <!-- Comentarios -->
+    <label for="comentarios">Comentarios º</label>
+    <textarea id="comentarios" name="comentarios" required minlength="10" maxlength="1000" rows="4"></textarea>
+    
+    <!-- Botones para enviar y borrar la info -->
+    <p>
+      <button type="submit">Enviar</button>
+      <button type="reset">Limpiar</button>
+    </p>
+  </fieldset>
+</form>
+<!--8. Pie de página (footer)-->
+<footer>
+    <br>
+    <p>© 2025 - Todos los derechos reservados</p>
+    <h3>Redes Sociales</h3>
+    <nav>
+        <ul>
+            <li><a href="https://github.com/LinMDP" target="_blank">GitHub</a></li>
+            <li><a href="https://www.instagram.com/ln3ri_0001" target="_blank">Instagram</a></li>
+            <li><a href="https://discordapp.com/users/729803152819355788" target="_blank">Discord</a></li>
+        </ul>
+    </nav>
+    <br>
+</footer>
+</body>
+</html>
